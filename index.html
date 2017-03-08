@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+
+<h1>Enter the desired mark:</h1>
+
+<input type="text" name="number" id="ResultNumber">
+
+<button type="button" onclick="ClckResult();">Show Result</button>
+<h1 id="ResultShow"> </h1>
+
+<script>
+
+function ClckResult(){
+var a=document.getElementById("ResultNumber").value;
+
+if (a<=100) {
+document.getElementById("ResultShow").innerHTML="A+";
+	if (a<=79) {
+	document.getElementById("ResultShow").innerHTML="A";
+			if (a<=69) {
+			document.getElementById("ResultShow").innerHTML="A-";
+					if (a<=59) {
+					document.getElementById("ResultShow").innerHTML="B";
+							if (a<=49) {
+							document.getElementById("ResultShow").innerHTML="C";
+								if (a<=39) {
+								document.getElementById("ResultShow").innerHTML="D";
+									if (a<=32) {
+									document.getElementById("ResultShow").innerHTML="F";
+									}
+								}
+							}
+					}
+			}
+	}
+}
+else{
+document.getElementById("ResultShow").innerHTML="Invalid Input. Please Try Again.";
+}
+
+}
+</script>
+</body>
+</html>
