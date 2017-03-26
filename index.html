@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" href="logo2.png">
+
 <title>GPA</title>
-	<link rel="shortcut icon" href="logo2.png">
 </head>
 <body>
 
@@ -13,6 +14,12 @@
 
 <button type="button" onclick="ClckResult();">Show Result</button>
 <h1 id="ResultShow"> </h1>
+
+<h1>Enter an integer</h1>
+
+<input type="text" name="number" id="Result-evod">
+<button type="button" onclick="Clckevod();">Show even or odd</button>
+<h1 id="show-evod"></h1>
 
 <script>
 
@@ -45,6 +52,18 @@ document.getElementById("ResultShow").innerHTML="Invalid Input. Please Try Again
 }
 
 }
+
+function Clckevod(){
+	var b=document.getElementById("Result-evod").value;
+
+	if(b%2==0){
+		document.getElementById("show-evod").innerHTML="Even";
+	}
+	else{
+		document.getElementById("show-evod").innerHTML="Odd";
+	}
+}
+
 </script>
 </body>
 </html>
